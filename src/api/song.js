@@ -48,7 +48,7 @@ export const getMusicNumUrl = async (id) => {
   //     ? "kuwo,qq,pyncmd,kugou"
   //     : "qq,pyncmd,kugou";
   const server = "kuwo,qq,pyncmd,kugou,youtube";
-  const url = `${import.meta.env.VITE_UNM_API}match?id=${id}&server=${server}`;
+  const url = `${import.meta.env.VITE_UNM_API}unm.php?id=${id}&server=${server}`;
   const response = await fetch(url, {
     method: "GET",
     headers: {
