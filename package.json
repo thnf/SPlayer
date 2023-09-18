@@ -1,8 +1,8 @@
 {
   "name": "splayer",
   "version": "1.1.9",
-  "author": "imsyy",
-  "home": "https://imsyy.top",
+  "author": "bpuxi(原作者:imsyy)",
+  "home": "https://www.bpuxi.top?thnf=tool.html",
   "github": "https://github.com/imsyy/SPlayer",
   "scripts": {
     "dev": "vite --host",
