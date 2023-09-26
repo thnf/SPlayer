@@ -275,7 +275,7 @@ const setThemeCustom = () => {
 };
 
 // UNM 开关显示
-const useUnmServerShow = import.meta.env.VITE_UNM_API ? true : false;
+const useUnmServerShow = import.meta.env.VITE_UNM_API ? false : true;
 
 // 深浅模式
 const themeOptions = ref([]);
