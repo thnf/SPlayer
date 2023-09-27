@@ -233,7 +233,7 @@ export default {
       needVip: "该操作需要账号为黑胶会员",
       needCheck: "请检查您的输入",
       isLoading: "数据加载中",
-      vipTip: "当前歌曲为 VIP 专享，仅可试听",
+      vipTip: "当前歌曲为 VIP 歌曲",
       playError: "当前歌曲播放失败，跳至下一首",
       signInSuccess: "签到成功",
       signInSuccessDesc: "每日签到及云贝签到成功",
