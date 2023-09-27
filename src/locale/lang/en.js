@@ -236,7 +236,7 @@ export default {
       needCheck: "Please check your input",
       isLoading: "Data loading",
       vipTip:
-        "The current song is exclusive for VIP and can be listened to only",
+        "The current song is exclusive for VIP",
       playError: "Current song failed to play, skip to next song",
       signInSuccess: "Sign In Success",
       signInSuccessDesc: "Daily sign-in and Yunbei sign-in success",
