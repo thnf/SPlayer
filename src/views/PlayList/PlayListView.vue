@@ -303,7 +303,7 @@ const getPlayListDetailData = (id) => {
 };
 
 // 获取歌单所有歌曲
-const getAllPlayListData = (id, limit = 30, offset = 0) => {
+const getAllPlayListData = (id, limit = 50, offset = 0) => {
   getAllPlayList(id, limit, offset).then((res) => {
     console.log(res);
     if (res.songs) {

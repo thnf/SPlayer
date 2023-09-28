@@ -36,7 +36,7 @@ export const getUserSubcount = () => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getUserPlaylist = (uid, limit = 30, offset = 0) => {
+export const getUserPlaylist = (uid, limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/user/playlist",
@@ -54,7 +54,7 @@ export const getUserPlaylist = (uid, limit = 30, offset = 0) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getUserAlbum = (limit = 30, offset = 0) => {
+export const getUserAlbum = (limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/album/sublist",
@@ -118,7 +118,7 @@ export const setLikeSong = (id, like = true) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getCloud = (limit = 30, offset = 0) => {
+export const getCloud = (limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/user/cloud",

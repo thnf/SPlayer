@@ -192,7 +192,7 @@ const hqPLayListChange = (val) => {
 };
 
 // 获取歌单数据
-const getPlaylistData = (cat = "全部歌单", limit = 30, offset = 0) => {
+const getPlaylistData = (cat = "全部歌单", limit = 50, offset = 0) => {
   getTopPlaylist(cat, limit, offset).then((res) => {
     console.log(res);
     // 数据总数
@@ -218,7 +218,7 @@ const getPlaylistData = (cat = "全部歌单", limit = 30, offset = 0) => {
 };
 
 // 获取精品歌单数据
-const getHqPlaylistData = (cat = "全部歌单", limit = 30) => {
+const getHqPlaylistData = (cat = "全部歌单", limit = 50) => {
   // 获取 before
   const before = playlistsData.value[0]
     ? playlistsData.value[playlistsData.value.length - 1].updateTime

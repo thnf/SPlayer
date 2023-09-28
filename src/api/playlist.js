@@ -21,7 +21,7 @@ export const getPlayListCatlist = (highquality = false) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getTopPlaylist = (cat = "全部", limit = 30, offset = 0) => {
+export const getTopPlaylist = (cat = "全部", limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/top/playlist",
@@ -39,7 +39,7 @@ export const getTopPlaylist = (cat = "全部", limit = 30, offset = 0) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [before] - 上一页最后一个歌单的updateTime，用于翻页
  */
-export const getHighqualityPlaylist = (cat = "全部", limit = 30, before) => {
+export const getHighqualityPlaylist = (cat = "全部", limit = 50, before) => {
   return axios({
     method: "GET",
     url: "/top/playlist/highquality",
@@ -73,7 +73,7 @@ export const getPlayListDetail = (id) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getAllPlayList = (id, limit = 30, offset = 0) => {
+export const getAllPlayList = (id, limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/playlist/track/all",

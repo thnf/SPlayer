@@ -117,7 +117,7 @@ const upSongModal = ref(false);
 const upSongCompleted = ref(0);
 
 // 获取云盘数据
-const getCloudData = (limit = 30, offset = 0, scroll = true) => {
+const getCloudData = (limit = 50, offset = 0, scroll = true) => {
   getCloud(limit, offset).then((res) => {
     console.log(res);
     totalCount.value = res.count;

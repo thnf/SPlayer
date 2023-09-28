@@ -15,7 +15,7 @@ import axios from "@/utils/request";
 export const getArtistList = (
   type = -1,
   area = -1,
-  limit = 30,
+  limit = 50,
   offset = 0,
   initial = -1
 ) => {
@@ -70,7 +70,7 @@ export const getArtistSongs = (id) => {
  */
 export const getArtistAllSongs = (
   id,
-  limit = 30,
+  limit = 50,
   offset = 0,
   order = "hot"
 ) => {
@@ -93,7 +93,7 @@ export const getArtistAllSongs = (
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getArtistAblums = (id, limit = 30, offset = 0) => {
+export const getArtistAblums = (id, limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/artist/album",
@@ -111,7 +111,7 @@ export const getArtistAblums = (id, limit = 30, offset = 0) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getArtistVideos = (id, limit = 30, offset = 0) => {
+export const getArtistVideos = (id, limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/artist/mv",

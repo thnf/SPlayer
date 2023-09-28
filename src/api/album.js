@@ -25,7 +25,7 @@ export const getAlbum = (id) => {
  * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getAlbumNew = (area, limit = 30, offset = 0) => {
+export const getAlbumNew = (area, limit = 50, offset = 0) => {
   return axios({
     method: "GET",
     url: "/album/new",

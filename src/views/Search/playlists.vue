@@ -34,7 +34,7 @@ const pageNumber = ref(
 );
 
 // 获取搜索数据
-const getSearchDataList = (keywords, limit = 30, offset = 0, type = 1000) => {
+const getSearchDataList = (keywords, limit = 50, offset = 0, type = 1000) => {
   getSearchData(keywords, limit, offset, type).then((res) => {
     console.log(res);
     // 数据总数

@@ -76,7 +76,7 @@ const albumArea = [
 ];
 
 // 获取新碟数据
-const getAlbumNewData = (area, limit = 30, offset = 0) => {
+const getAlbumNewData = (area, limit = 50, offset = 0) => {
   getAlbumNew(area, limit, offset).then((res) => {
     console.log(res);
     // 数据总数

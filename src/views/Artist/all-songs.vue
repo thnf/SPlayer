@@ -65,7 +65,7 @@ const getArtistDetailData = (id) => {
 };
 
 // 获取歌手信息
-const getArtistAllSongsData = (id, limit = 30, offset = 0, order = "hot") => {
+const getArtistAllSongsData = (id, limit = 50, offset = 0, order = "hot") => {
   if (!id) return false;
   getArtistAllSongs(id, limit, offset, order)
     .then((res) => {
