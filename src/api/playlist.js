@@ -73,7 +73,7 @@ export const getPlayListDetail = (id) => {
  * @param {number} [limit=50] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getAllPlayList = (id, limit = 50, offset = 0) => {
+export const getAllPlayList = (id, limit = 50, offset = 5) => {
   return axios({
     method: "GET",
     url: "/playlist/track/all",
