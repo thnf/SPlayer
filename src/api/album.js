@@ -22,7 +22,7 @@ export const getAlbum = (id) => {
 /**
  * 获取全部新碟
  * @param {string} area - 地区码，ALL:全部,ZH:华语,EA:欧美,KR:韩国,JP:日本
- * @param {number} [limit=30] - 返回数量，默认30
+ * @param {number} [limit=50] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
 export const getAlbumNew = (area, limit = 50, offset = 0) => {

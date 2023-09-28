@@ -33,7 +33,7 @@ export const getUserSubcount = () => {
 /**
  * 获取用户的歌单列表
  * @param {string} uid 用户的id
- * @param {number} [limit=30] - 返回数量，默认30
+ * @param {number} [limit=50] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
 export const getUserPlaylist = (uid, limit = 50, offset = 0) => {
@@ -51,7 +51,7 @@ export const getUserPlaylist = (uid, limit = 50, offset = 0) => {
 
 /**
  * 获取用户的专辑列表
- * @param {number} [limit=30] - 返回数量，默认30
+ * @param {number} [limit=50] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
 export const getUserAlbum = (limit = 50, offset = 0) => {
@@ -115,7 +115,7 @@ export const setLikeSong = (id, like = true) => {
 
 /**
  * 获取用户云盘数据
- * @param {number} [limit=30] - 返回数量，默认30
+ * @param {number} [limit=50] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
 export const getCloud = (limit = 50, offset = 0) => {
