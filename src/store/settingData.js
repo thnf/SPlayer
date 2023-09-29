@@ -48,7 +48,7 @@ const useSettingDataStore = defineStore("settingData", {
       // 鼠标移入歌词区域暂停滚动
       lrcMousePause: false,
       // 是否使用网易云解灰
-      useUnmServer: true,
+      useUnmServer: false,
       // 播放背景是否显示图片
       backgroundImageShow: "blur",
       // 是否显示前奏等待
@@ -58,7 +58,7 @@ const useSettingDataStore = defineStore("settingData", {
       // 歌曲渐入渐出
       songVolumeFade: true,
       // 列表默认数量
-      listNumber: 30,
+      listNumber: 50,
       // 记忆上次播放位置
       memoryLastPlaybackPosition: true,
       // 语言
