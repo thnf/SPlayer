@@ -149,7 +149,7 @@ const catName = ref(
 // 歌单数据
 const playlistsData = ref([]);
 const totalCount = ref(0);
-const pagelimit = ref(30);
+const pagelimit = ref(50);
 const pageNumber = ref(
   router.currentRoute.value.query.page
     ? Number(router.currentRoute.value.query.page)
