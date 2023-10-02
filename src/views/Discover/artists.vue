@@ -168,11 +168,11 @@ const artistTypeChange = (index) => {
 // 加载更多
 const loadingMore = () => {
   loading.value = true;
-  artistsOffset.value += 30;
+  artistsOffset.value += 50;
   getArtistListData(
     artistType[artistTypeNamesChoose.value],
     artistArea[artistTypeNamesChoose.value],
-    30,
+    50,
     artistsOffset.value,
     artistInitialChoose.value
   );
@@ -192,7 +192,7 @@ watch(
       getArtistListData(
         artistType[artistTypeNamesChoose.value],
         artistArea[artistTypeNamesChoose.value],
-        30,
+        50,
         0,
         artistInitialChoose.value
       );

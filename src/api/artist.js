@@ -8,14 +8,14 @@ import axios from "@/utils/request";
  * 歌手分类列表
  * @param {number} type - 歌手类型（-1:全部 1:男歌手 2:女歌手 3:乐队）
  * @param {number} area - 歌手区域（-1:全部 7:华语 96:欧美 8:日本 16:韩国 0:其他）
- * @param {number} [limit=50] - 返回数量，默认30
+ * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  * @param {number} initial - 首字母索引查找参数
  */
 export const getArtistList = (
   type = -1,
   area = -1,
-  limit = 50,
+  limit = 30,
   offset = 0,
   initial = -1
 ) => {
@@ -90,10 +90,10 @@ export const getArtistAllSongs = (
 /**
  * 获取歌手专辑
  * @param {number} id - 歌手id
- * @param {number} [limit=50] - 返回数量，默认30
+ * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getArtistAblums = (id, limit = 50, offset = 0) => {
+export const getArtistAblums = (id, limit = 30, offset = 0) => {
   return axios({
     method: "GET",
     url: "/artist/album",
@@ -108,10 +108,10 @@ export const getArtistAblums = (id, limit = 50, offset = 0) => {
 /**
  * 获取歌手视频
  * @param {number} id - 歌手id
- * @param {number} [limit=50] - 返回数量，默认30
+ * @param {number} [limit=30] - 返回数量，默认30
  * @param {number} [offset=0] - 偏移数量，默认0
  */
-export const getArtistVideos = (id, limit = 50, offset = 0) => {
+export const getArtistVideos = (id, limit = 30, offset = 0) => {
   return axios({
     method: "GET",
     url: "/artist/mv",
