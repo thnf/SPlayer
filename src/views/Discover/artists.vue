@@ -29,7 +29,7 @@
         </n-tag>
       </n-space>
     </div>
-    <ArtistLists :listData="artistsData" :loadingNum="30" />
+    <ArtistLists :listData="artistsData" :loadingNum="50" />
     <n-space justify="center">
       <n-button
         v-if="hasMore"

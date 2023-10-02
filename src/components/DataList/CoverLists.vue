@@ -154,7 +154,7 @@ const props = defineProps({
   // 加载占位数量
   loadingNum: {
     type: Number,
-    default: 30,
+    default: 50,
   },
 });
 const playlistUpdateRef = ref(null);
