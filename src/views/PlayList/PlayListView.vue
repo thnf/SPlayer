@@ -182,7 +182,7 @@ const playListId = ref(router.currentRoute.value.query.id);
 const playListDetail = ref(null);
 const playListData = ref([]);
 const playListDescShow = ref(false);
-const pagelimit = ref(30);
+const pagelimit = ref(50);
 const loadingState = ref(true);
 const pageNumber = ref(
   router.currentRoute.value.query.page
