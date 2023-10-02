@@ -45,7 +45,7 @@ const props = defineProps({
 const emit = defineEmits(["pageSizeChange", "pageNumberChange"]);
 
 // 每页个数
-const currentPageSize = ref(30);
+const currentPageSize = ref(50);
 // 当前页数
 const currentPageNumber = ref(1);
 

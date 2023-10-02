@@ -102,7 +102,7 @@ const setting = settingStore();
 // 云盘数据
 const cloudSpace = ref([]);
 const cloudData = ref([]);
-const pagelimit = ref(30);
+const pagelimit = ref(50);
 const pageNumber = ref(
   router.currentRoute.value.query.page
     ? Number(router.currentRoute.value.query.page)
